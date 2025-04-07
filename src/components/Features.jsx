@@ -103,12 +103,10 @@ const Features = () => (
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
         <p className="font-circular-web text-lg text-blue-50">
-          Into the Metagame Layer
+          Projects
         </p>
         <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
-          Immerse yourself in a rich and ever-expanding universe where a vibrant
-          array of products converge into an interconnected overlay experience
-          on your world.
+          From school work to personal projects, I have tried my hand on web development and game development.
         </p>
       </div>
 
@@ -117,10 +115,10 @@ const Features = () => (
           src="videos/feature-1.mp4"
           title={
             <>
-              radia<b>n</b>t
+              Techstack
             </>
           }
-          description="A cross-platform metagame app, turning your activities across Web2 and Web3 games into a rewarding adventure."
+          description="Classes taught with C++ and Python3, personally I have been using JavaScript and React."
           isComingSoon
         />
       </BentoTilt>

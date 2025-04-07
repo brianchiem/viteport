@@ -1,6 +1,6 @@
 import clsx from "clsx";
 
-const Button = ({ id, title, rightIcon, leftIcon, containerClass }) => {
+const Button = ({ id, title, rightIcon, leftIcon, containerClass, dest }) => {
   return (
     <button
       id={id}
@@ -16,7 +16,7 @@ const Button = ({ id, title, rightIcon, leftIcon, containerClass }) => {
           {title}
         </div>
         <div className="absolute translate-y-[164%] skew-y-12 transition duration-500 group-hover:translate-y-0 group-hover:skew-y-0">
-          {title}
+          <a href={dest}>{title}</a>
         </div>
       </span>
 
