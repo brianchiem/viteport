@@ -38,7 +38,7 @@ export const BentoTilt = ({ children, className = "" }) => {
   );
 };
 
-export const BentoCard = ({ src, title, description, isComingSoon }) => {
+export const BentoCard = ({ src, title, description, isComingSoon, buttonText, blink }) => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [hoverOpacity, setHoverOpacity] = useState(0);
   const hoverButtonRef = useRef(null);
@@ -74,7 +74,9 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
         </div>
 
         {isComingSoon && (
-          <div
+          <a
+            href={blink}
+            target="_blank"
             ref={hoverButtonRef}
             onMouseMove={handleMouseMove}
             onMouseEnter={handleMouseEnter}
@@ -90,8 +92,8 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
               }}
             />
             <TiLocationArrow className="relative z-20" />
-            <p className="relative z-20">coming soon</p>
-          </div>
+            <p className="relative z-20">{buttonText}</p>
+          </a>
         )}
       </div>
     </div>
@@ -99,7 +101,8 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
 };
 
 const Features = () => (
-  <section className="bg-black pb-52">
+  // pb-52
+  <section className="bg-black pb-1">
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
         <p className="font-circular-web text-lg text-blue-50">
@@ -119,7 +122,6 @@ const Features = () => (
             </>
           }
           description="Classes taught with C++ and Python3, personally I have been using JavaScript and React."
-          isComingSoon
         />
       </BentoTilt>
 
@@ -129,11 +131,11 @@ const Features = () => (
             src="videos/feature-2.mp4"
             title={
               <>
-                zig<b>m</b>a
+                Wordle Clone
               </>
             }
-            description="An anime and gaming-inspired NFT collection - the IP primed for expansion."
-            isComingSoon
+            description="Project lead for NYT's Wordle Clone, fully functional with social feature integrations."
+            isComingSoon blink={"https://cs35l-group26-1.onrender.com"} buttonText={"see site"}
           />
         </BentoTilt>
 
@@ -142,15 +144,15 @@ const Features = () => (
             src="videos/feature-3.mp4"
             title={
               <>
-                n<b>e</b>xus
+                YouTube Clone
               </>
             }
-            description="A gamified social hub, adding a new dimension of play to social interaction for Web3 communities."
-            isComingSoon
+            description="YouTube clone with HTML and CSS."
+            isComingSoon blink={""} buttonText={"see site"}
           />
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
+        {/* <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
           <BentoCard
             src="videos/feature-4.mp4"
             title={
@@ -161,19 +163,19 @@ const Features = () => (
             description="A cross-world AI Agent - elevating your gameplay to be more fun and productive."
             isComingSoon
           />
-        </BentoTilt>
+        </BentoTilt> */}
 
         <BentoTilt className="bento-tilt_2">
           <div className="flex size-full flex-col justify-between bg-violet-300 p-5">
             <h1 className="bento-title special-font max-w-64 text-black">
-              M<b>o</b>re co<b>m</b>ing s<b>o</b>on.
+              More coming soon.
             </h1>
 
             <TiLocationArrow className="m-5 scale-[5] self-end" />
           </div>
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_2">
+        {/* <BentoTilt className="bento-tilt_2">
           <video
             src="videos/feature-5.mp4"
             loop
@@ -181,7 +183,7 @@ const Features = () => (
             autoPlay
             className="size-full object-cover object-center"
           />
-        </BentoTilt>
+        </BentoTilt> */}
       </div>
     </div>
   </section>
