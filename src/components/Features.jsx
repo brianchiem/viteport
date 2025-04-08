@@ -64,6 +64,7 @@ export const BentoCard = ({ src, title, description, isComingSoon, buttonText, b
         muted
         autoPlay
         className="absolute left-0 top-0 size-full object-cover object-center"
+        playsInline
       />
       <div className="relative z-10 flex size-full flex-col justify-between p-5 text-blue-50">
         <div>
@@ -112,7 +113,7 @@ const Features = () => (
           From school work to personal projects, I have tried my hand on web development and game development.
         </p>
       </div>
-
+      
       <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
         <BentoCard
           src="videos/feature-1.mp4"
