@@ -126,7 +126,7 @@ const Features = () => (
         />
       </BentoTilt>
 
-      <div className="grid h-[135vh] w-full grid-cols-2 grid-rows-3 gap-7">
+      <div className="grid h-[135vh] w-full grid-cols-2 grid-rows-3 gap-7 mb-8">
         <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
           <BentoCard
             src="videos/feature-2.mp4"
@@ -149,22 +149,22 @@ const Features = () => (
               </>
             }
             description="YouTube clone with HTML and CSS."
-            isComingSoon blink={""} buttonText={"see site"}
+            isComingSoon blink={"https://brianchiem.github.io/youtube-clone/"} buttonText={"see site"}
           />
         </BentoTilt>
 
-        {/* <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
+        <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
           <BentoCard
             src="videos/feature-4.mp4"
             title={
               <>
-                az<b>u</b>l
+                Clash Royale Concept
               </>
             }
-            description="A cross-world AI Agent - elevating your gameplay to be more fun and productive."
-            isComingSoon
+            description="Unity Clash Royale core gameplay recreation built with C#"
+            
           />
-        </BentoTilt> */}
+        </BentoTilt>
 
         <BentoTilt className="bento-tilt_2">
           <div className="flex size-full flex-col justify-between bg-violet-300 p-5">
