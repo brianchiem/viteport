@@ -41,7 +41,7 @@ const About = () => {
         <div className="about-subtext">
           <p>Asian-American, born and raised in Southern California</p>
           <p className="text-gray-500">
-            Currently studying Linguistics and Computer Science at UCLA. Interested in accessible interfaces and graphic design.
+            Currently studying Linguistics and Computer Science at UCLA. Interested in accessible interfaces, graphic design. I also love cars, I currently drive an '07 Lexus IS350.
           </p>
         </div>
       </div>
