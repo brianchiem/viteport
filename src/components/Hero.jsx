@@ -156,7 +156,7 @@ const Hero = () => {
             </h1>
 
             <p className="mb-5 max-w-64 font-robert-regular text-blue-100">
-              Undergraduate at UCLA <br /> Aspiring Software Engineer
+              Undergraduate at UCLA <br /> Project Lead @ Handshake AI
             </p>
 
             {/* <Button

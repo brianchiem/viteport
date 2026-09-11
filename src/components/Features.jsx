@@ -129,6 +129,19 @@ const Features = () => (
       <div className="grid h-[135vh] w-full grid-cols-2 grid-rows-3 gap-7 mb-8">
         <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
           <BentoCard
+            src="videos/feature-6.mp4"
+            title={
+              <>
+                K-DLE
+              </>
+            }
+            description="Lead developer for a daily K-Pop song guessing game."
+            isComingSoon blink={"https://kdle-gamma.vercel.app/"} buttonText={"see site"}
+          />
+        </BentoTilt>
+
+        <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
+          <BentoCard
             src="videos/feature-2.mp4"
             title={
               <>
